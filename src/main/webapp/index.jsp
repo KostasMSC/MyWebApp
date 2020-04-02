@@ -19,10 +19,6 @@
 	
 	<p>
 	<p>
-		For more news please check <a href="https://edition.cnn.com">CNN
-			News</a>.
-	<p>
-	<p>
 	<center>
 		<img src="flowers.jpg">
 	</center>
