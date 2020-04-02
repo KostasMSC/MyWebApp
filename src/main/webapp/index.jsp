@@ -18,7 +18,7 @@
 		Please contact us at <a href="mailto:sefremidis@athtech.gr">sefremidis@athtech.gr</a>.
 	
 	<p>
-	<p>test online</p>
+	<p>test online after build trigger</p>
 	<p>
 	<center>
 		<img src="flowers.jpg">
