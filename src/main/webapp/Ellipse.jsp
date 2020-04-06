@@ -4,19 +4,19 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Right Triangle</title>
+<title>Ellipse</title>
 </head>
 <body bgcolor="FEF9E7">
 <font face="verdana">
 	<h1>Hello!</h1>
 
 	<p>
-	<p>This is a <font color="red">Red Right Triangle</font>.
+	<p>This is a <font color="red">Red Ellipse</font>.
 	<p>
 	<p>
-	<svg height="150" width="100" xmlns="http://www.w3.org/2000/svg">
-		<polygon points="0,0 0,150 100,150"
-			style="fill:red;stroke:black;stroke-width:1" />
+	<svg height="100" width="200">
+  		<ellipse cx="100" cy="50" rx="100" ry="50"
+  			style="fill:red;stroke:black;stroke-width:1" />
 	</svg>
 </font>
 </body>

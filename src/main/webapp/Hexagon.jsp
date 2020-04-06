@@ -6,11 +6,18 @@
 <meta charset="ISO-8859-1">
 <title>Hexagon</title>
 </head>
-<body>
+<body bgcolor="FEF9E7">
+<font face="verdana">
+	<h1>Hello!</h1>
 
-	<h1>Welcome</h1>
-
-	<p>Hello!
-	<p>This is a red Hexagon
+	<p>
+	<p>This is a <font color="red">Red Hexagon</font>.
+	<p>
+	<p>
+	<svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+		<polygon points="0,87 50,173 150,173 200,87 150,0 50,0"
+			style="fill:red;stroke:black;stroke-width:1" />
+	</svg>
+</font>
 </body>
 </html>

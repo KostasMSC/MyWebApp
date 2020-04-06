@@ -6,11 +6,18 @@
 <meta charset="ISO-8859-1">
 <title>Right Rectangle</title>
 </head>
-<body>
+<body bgcolor="FEF9E7">
+<font face="verdana">
+	<h1>Hello!</h1>
 
-	<h1>Welcome</h1>
-
-	<p>Hello!
-	<p>This is a red Right Rectangle
+	<p>
+	<p>This is a <font color="red">Red Right Rectangle</font>.
+	<p>
+	<p>
+	<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  		<rect width="200" height="100"
+  			style="fill:red;stroke:black;stroke-width:1" />
+	</svg>
+</font>
 </body>
 </html>
