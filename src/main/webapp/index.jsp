@@ -18,6 +18,7 @@ if (i==null || i==0) {
 
 out.println("Visited: " + i + " times!!");
 application.setAttribute("count",i);
+
 %>
     <p>
     <center>
