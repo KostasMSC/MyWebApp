@@ -50,11 +50,11 @@ application.setAttribute("count",i);
       (Integer)application.getAttribute("hitCounter");
     if( hitsCount ==null || hitsCount == 0 ){
        /* First visit */
-       out.println("Welcome to SPlessons");
+       out.println("Welcome to SPlessons!!");
        hitsCount = 1;
     }else{
        /* return visit */
-       out.println("Welcome back to SPlessons!");
+       out.println("Welcome back to SPlessons!!!!");
        hitsCount += 1;
     }
     application.setAttribute("hitCounter", hitsCount);
