@@ -6,6 +6,19 @@
 <title>CCP6418</title>
 </head>
 <body bgcolor="FEF9E7">
+
+<%
+Integer i = (Integer)application.getAttribute("count");
+
+if (i==null || i==0) {
+	i=1;
+} else {
+	i++;
+}
+
+out.println("Visited: " + i + " times!!");
+application.setAttribute("count",i);
+%>
     <p>
     <center>
 		<img src="logo.jpg">
