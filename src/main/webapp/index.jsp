@@ -20,7 +20,7 @@
 	<p>Today's topic: Geometric Shapes.
 	<p>Check the following ones.
 	<ol>
-        <li><a href="Circle.jsp">Circle</a></li>
+        <li><a href="Circle.jsp">Circle1</a></li>
         <li><a href="Ellipse.jsp">Ellipse</a></li>
         <li><a href="RightTriangle.jsp">Right Triangle</a></li>
         <li><a href="RightRectangle.jsp">Right Rectangle</a></li>
