@@ -61,36 +61,33 @@ try {
 	Statement stmt2 = conn.createStatement();
 	// calculate visit timestamps per shape
 	ResultSet rs2 = stmt2.executeQuery("SELECT SHAPE, TS FROM PAGE_VISITS ORDER BY SHAPE asc ,TS asc");
-	/*
-	try {
+	
+
         // Creating a File object that represents the disk file. 
-        PrintStream o = new PrintStream(new File("Output.txt")); 
+//         PrintStream o = new PrintStream(new File("Output.txt")); 
   
         // Store current System.out before assigning a new value 
-        PrintStream console = System.out; 
+//         PrintStream console = System.out; 
   
         // Assign o to output stream 
-        System.setOut(o);
+//         System.setOut(o);
         
 		// for each shape print its name and number of visits, followed by the list of visit timestamps
 		while (rs1.next()) {
 			int num = rs1.getInt("NUM");
-			System.out.println(rs1.getString("SHAPE") + ": " + num + " visit(s).");
+			out.println(rs1.getString("SHAPE") + ": " + num + " visit(s).");
 			for (int idx = 0; idx < num; idx++) {
 				rs2.next();
-				System.out.println("        " + rs2.getTimestamp("TS"));
+				out.println("        " + rs2.getTimestamp("TS"));
 			}
 		}
 		
-        System.setOut(console); 
-        System.out.println("File Created Web App!");
+//         System.setOut(console); 
+        out.println("File Created Web App!");
 		
-	} catch (FileNotFoundException e) {
-		
-	}
-    */
+    
 	
-	System.out.println("Database Closed");
+	out.println("Database Closed");
 
 	/*
 	 * release resources
