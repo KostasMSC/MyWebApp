@@ -82,7 +82,7 @@ try {
 				out.println("<p>" + rs2.getTimestamp("TS") + "</p>");
 			}
 		}
-		out.println("</ul>")
+		out.println("</ul>");
 		
 //         System.setOut(console); 
         out.println("File Created Web App!");
