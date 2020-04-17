@@ -82,10 +82,10 @@ try {
 		// for each shape print its name and number of visits, followed by the list of visit timestamps
 		while (rs1.next()) {
 			int num = rs1.getInt("NUM");
-			System.out.println(rs1.getString("SHAPE") + ": " + num + " visit(s).");
+			out.println(rs1.getString("SHAPE") + ": " + num + " visit(s).");
 			for (int idx = 0; idx < num; idx++) {
 				rs2.next();
-				System.out.println("        " + rs2.getTimestamp("TS"));
+				out.println("        " + rs2.getTimestamp("TS"));
 			}
 		}
 		
