@@ -9,8 +9,8 @@
 <title>Reset Statistics</title>
 </head>
 <body>
+<h1>You can Reset Statistics here!!!!</h1>
 <%
-	out.println("You can reset Statistics here!!!!");
 	Connect.truncateTable();
 %>
 
