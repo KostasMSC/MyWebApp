@@ -1,8 +1,4 @@
-<%
-import java.sql.*;
-import java.util.Random;
-import java.io.*;
-%>
+<%@ page import="java.sql.*,java.util.Random,java.io.*" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
