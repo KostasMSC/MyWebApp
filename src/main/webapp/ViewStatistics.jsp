@@ -47,7 +47,7 @@ try {
 		int idx = ridx.nextInt(shapes.length);
 
 		// add the corresponding shape into the DB along with timestamp
-		stmt0.executeUpdate("INSERT INTO PAGE_VISITS (SHAPE, TS) VALUES ('" + shapes[idx] + "', NOW())");
+// 		stmt0.executeUpdate("INSERT INTO PAGE_VISITS (SHAPE, TS) VALUES ('" + shapes[idx] + "', NOW())");
 
 		// sleep a random amount of time up to MAXSLEEP / 1000 seconds;
 //		try {
