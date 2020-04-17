@@ -12,13 +12,13 @@
 out.println("You can view Statistics here!");
 	
 	// number of table rows to generate
-	private final int ITERN = 10;
+	final int ITERN = 10;
 	
 	// max time to sleep between table row insertions
-	private final int MAXSLEEP = 1000;
+	final int MAXSLEEP = 1000;
 
 	// shape names
-	private final String[] shapes = { "Circle", "Ellipse", "Right Triangle", "Right Rectangle",
+	final String[] shapes = { "Circle", "Ellipse", "Right Triangle", "Right Rectangle",
 			"Isosceles Trapezoid", "Isosceles Triangle", "Equilateral Triangle", "Square", "Pentagon", "Hexagon" };
 	
 Connection conn;
