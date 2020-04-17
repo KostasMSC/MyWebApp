@@ -31,25 +31,6 @@ try {
 	
 	Statement stmt0 = conn.createStatement();
 
-	Random ridx = new Random();
-	Random sleept = new Random();
-
-	for (int i = 0; i < ITERN; i++) {
-
-		// select a random index value for the shapes table
-		int idx = ridx.nextInt(shapes.length);
-
-		// add the corresponding shape into the DB along with timestamp
-		stmt0.executeUpdate("INSERT INTO PAGE_VISITS (SHAPE, TS) VALUES ('" + shapes[idx] + "', NOW())");
-
-		// sleep a random amount of time up to MAXSLEEP / 1000 seconds;
-//		try {
-//			Thread.sleep(sleept.nextInt(MAXSLEEP));
-//		} catch (InterruptedException e) {
-//
-//		}
-	}
-
 	/*
 	 * generate statistics
 	 */
@@ -84,13 +65,6 @@ try {
 			}
 			out.println("</ul>");
 		}
-		
-//         System.setOut(console); 
-        out.println("File Created Web App!");
-		
-    
-	
-	out.println("Database Closed");
 
 	/*
 	 * release resources
