@@ -1,5 +1,5 @@
 <%@ page import="java.sql.*,java.util.Random,java.io.*"%>
-<%@ page import="Demo.ShapeStatistics" %>
+<%@ page import="Demo.Connect" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -9,15 +9,13 @@
 <title>Reset Statistics</title>
 </head>
 <body>
-	<%
-out.println("You can reset Statistics here!!!!");
-	out.println(ShapeStatistics.testMethod());
-	ShapeStatistics.main(null);
+<%
+	out.println("You can reset Statistics here!!!!");
+	Connect.truncateTable();
 %>
 
-	<%
-out.println("Imported");
-	
+<%
+	out.println("Imported");	
 %>
 </body>
 </html>
