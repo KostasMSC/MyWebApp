@@ -6,7 +6,7 @@ pageEncoding="ISO-8859-1"%>
 <title>Create a Database using JSP</title>
 </head>
 <body>
-<h1>Create a Database using JSP</h1>
+<h1>Create a Database using JSP!!</h1>
 <%
 Connection connection = null;
 try {
