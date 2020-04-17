@@ -71,13 +71,13 @@ try {
 	
 	try {
         // Creating a File object that represents the disk file. 
-        PrintStream o = new PrintStream(new File("Output.txt")); 
+        //PrintStream o = new PrintStream(new File("Output.txt")); 
   
         // Store current System.out before assigning a new value 
-        PrintStream console = System.out; 
+        //PrintStream console = System.out; 
   
         // Assign o to output stream 
-        System.setOut(o);
+        //System.setOut(o);
         
 		// for each shape print its name and number of visits, followed by the list of visit timestamps
 		while (rs1.next()) {
@@ -89,8 +89,8 @@ try {
 			}
 		}
 		
-        System.setOut(console); 
-        System.out.println("File Created!");
+        //System.setOut(console); 
+        //System.out.println("File Created!");
 		
 	} catch (FileNotFoundException e) {
 		
