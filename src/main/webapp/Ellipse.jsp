@@ -18,6 +18,7 @@
   		<ellipse cx="100" cy="50" rx="100" ry="50"
   			style="fill:red;stroke:black;stroke-width:1" />
 	</svg>
+	<jsp:include page="InsertShapes.jsp" />
 </font>
 </body>
 </html>
