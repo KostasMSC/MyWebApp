@@ -12,8 +12,8 @@
 out.println("You can reset Statistics here!!!!");
 	
 %>
-<%@ page import="ShapeStatistics.java" %>
-<%Main.main(null);%>
+<%@ page import="ShapeStatistics" %>
+<%ShapeStatistics.main(null);%>
 	<%
 out.println("Imported");
 	
