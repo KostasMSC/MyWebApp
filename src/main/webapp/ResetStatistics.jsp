@@ -1,5 +1,5 @@
 <%@ page import="java.sql.*,java.util.Random,java.io.*"%>
-<%@ page import="Demo.MyClass" %>
+<%@ page import="Demo.ShapeStatistics" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -11,8 +11,7 @@
 <body>
 	<%
 out.println("You can reset Statistics here!!!!");
-	MyClass my =new MyClass();
-	out.println(my.testMethod());
+	ShapeStatistics.main(null);
 %>
 
 	<%
