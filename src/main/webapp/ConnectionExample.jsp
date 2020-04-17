@@ -8,6 +8,7 @@
 <h1>JDBC Connection example</h1>
 
 <%
+
   String db = "page_visits";
   String user = "root";
   try {
