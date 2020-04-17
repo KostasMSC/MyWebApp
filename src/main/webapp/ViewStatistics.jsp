@@ -1,4 +1,4 @@
-<%@ page import="java.sql.*,java.util.Random,java.io.*" %>
+<%@ page import="java.sql.*,java.util.Random,java.io.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -69,7 +69,7 @@ try {
 	// calculate visit timestamps per shape
 	ResultSet rs2 = stmt2.executeQuery("SELECT SHAPE, TS FROM PAGE_VISITS ORDER BY SHAPE asc ,TS asc");
 	
-	try {
+// 	try {
         // Creating a File object that represents the disk file. 
         //PrintStream o = new PrintStream(new File("Output.txt")); 
   
@@ -92,9 +92,9 @@ try {
         //System.setOut(console); 
         //System.out.println("File Created!");
 		
-	} catch (FileNotFoundException e) {
+// 	} catch (FileNotFoundException e) {
 		
-	}
+// 	}
     
 
 	/*
