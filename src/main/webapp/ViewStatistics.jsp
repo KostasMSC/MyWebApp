@@ -1,3 +1,8 @@
+<%
+import java.sql.*;
+import java.util.Random;
+import java.io.*;
+%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -9,6 +14,17 @@
 <body>
 	<%
 out.println("You can view Statistics here!");
+	
+	// number of table rows to generate
+	private static final int ITERN = 10;
+	
+	// max time to sleep between table row insertions
+	private static final int MAXSLEEP = 1000;
+
+	// shape names
+	private static final String[] shapes = { "Circle", "Ellipse", "Right Triangle", "Right Rectangle",
+			"Isosceles Trapezoid", "Isosceles Triangle", "Equilateral Triangle", "Square", "Pentagon", "Hexagon" };
+	
 Connection conn;
 
 try {
