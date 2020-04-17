@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>View Statistics</title>
+<title>Reset Statistics</title>
 </head>
 <body>
 	<%
@@ -13,7 +13,7 @@ out.println("You can reset Statistics here!!!!");
 	
 %>
 <%@ page import="ShapeStatistics" %>
-<%ShapeStatistics.main(null);%>
+<%ShapeStatistics.hello();%>
 	<%
 out.println("Imported");
 	

@@ -14,6 +14,9 @@ public class ShapeStatistics {
 	private static final String[] shapes = { "Circle", "Ellipse", "Right Triangle", "Right Rectangle",
 			"Isosceles Trapezoid", "Isosceles Triangle", "Equilateral Triangle", "Square", "Pentagon", "Hexagon" };
 
+	public static void hello() {
+		out.println("File Created!!!!!!");
+	}
 	public static void main(String[] args) {
 		Connection conn;
 
