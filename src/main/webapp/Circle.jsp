@@ -21,8 +21,7 @@
 	</svg>
 <%
 	// shape names
-	out.println("File: " + this.getClass().getSimpleName().replaceFirst("_jsp",""));
-String shape = "Circle";
+	String shape = this.getClass().getSimpleName().replaceFirst("_jsp","");
 
 Connection conn;
 
@@ -37,7 +36,6 @@ try {
 
 		// add the corresponding shape into the DB along with timestamp
 		stmt0.executeUpdate("INSERT INTO PAGE_VISITS (SHAPE, TS) VALUES ('" + shape + "', NOW())");
-
 
 
 	/*
