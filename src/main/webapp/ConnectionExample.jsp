@@ -11,7 +11,7 @@ pageEncoding="ISO-8859-1"%>
 Connection connection = null;
 try {
 Class.forName("com.mysql.jdbc.Driver").newInstance();
-connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/page_visits", "root", "");
+connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/page_visits", "root", "123456");
 Statement statement = connection.createStatement();
 String query = "CREATE DATABASE test";
 statement.executeUpdate(query);
