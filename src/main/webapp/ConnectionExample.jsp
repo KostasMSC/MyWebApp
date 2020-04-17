@@ -1,28 +1,26 @@
-<%@ page import="java.sql.*, com.mysql.jdbc.Driver"%>
+ <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<%@ page import="java.sql.*" %>
 <html>
 <head>
-<title>JDBC Connection example</title>
+<title>Create a Database using JSP</title>
 </head>
-
 <body>
-<h1>JDBC Connection example</h1>
-
+<h1>Create a Database using JSP</h1>
 <%
-
-  String db = "page_visits";
-  String user = "root";
-  try {
-    java.sql.Connection con;
-    Class.forName("com.mysql.jdbc.Driver").newInstance();
-    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/page_visits", "root", "123456");
-    out.println (db+ "database successfully opened.");
-	} catch (ClassNotFoundException e) {
-		out.println("ClassNotFoundException caught: " +e.getMessage());
-	}
-  catch(SQLException e) {
-    out.println("SQLException caught: " +e.getMessage());
-  }
+Connection connection = null;
+try {
+Class.forName("com.mysql.jdbc.Driver").newInstance();
+connection = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "");
+Statement statement = connection.createStatement();
+String query = "CREATE DATABASE test";
+statement.executeUpdate(query);
+out.println("Database test created sucessfully.");
+}
+catch (Exception e)
+{
+out.println("An error occurred.");
+}
 %>
-
 </body>
-</html>
+</html> 
