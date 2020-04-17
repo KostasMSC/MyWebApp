@@ -9,7 +9,7 @@
 </head>
 <body>
 	<%
-out.println("You can view Statistics here!");
+out.println("You can view Minify Statistics here!");
 	
 	// number of table rows to generate
 	final int ITERN = 10;
