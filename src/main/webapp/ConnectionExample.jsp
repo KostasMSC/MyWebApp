@@ -1,4 +1,4 @@
-<%@ page import="java.sql.*"%>
+<%@ page import="java.sql.*, com.mysql.jdbc.Driver"%>
 <html>
 <head>
 <title>JDBC Connection example</title>
