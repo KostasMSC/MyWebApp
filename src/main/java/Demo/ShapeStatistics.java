@@ -68,7 +68,7 @@ public class ShapeStatistics {
 			Statement stmt2 = conn.createStatement();
 			// calculate visit timestamps per shape
 			ResultSet rs2 = stmt2.executeQuery("SELECT SHAPE, TS FROM PAGE_VISITS ORDER BY SHAPE asc ,TS asc");
-			
+			/*
 			try {
 		        // Creating a File object that represents the disk file. 
 		        PrintStream o = new PrintStream(new File("Output.txt")); 
@@ -95,7 +95,9 @@ public class ShapeStatistics {
 			} catch (FileNotFoundException e) {
 				
 			}
-	        
+	        */
+			
+			System.out.println("Database Closed");
  
 			/*
 			 * release resources

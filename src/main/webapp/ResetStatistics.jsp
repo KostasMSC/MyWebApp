@@ -12,6 +12,7 @@
 	<%
 out.println("You can reset Statistics here!!!!");
 	out.println(ShapeStatistics.testMethod());
+	out.println(ShapeStatistics.main(null));
 %>
 
 	<%

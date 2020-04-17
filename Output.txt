@@ -1,0 +1,18 @@
+Circle: 1 visit(s).
+        2020-04-17 15:23:03.0
+Ellipse: 2 visit(s).
+        2020-04-17 15:23:03.0
+        2020-04-17 15:23:03.0
+Equilateral Triangle: 1 visit(s).
+        2020-04-17 15:23:03.0
+Hexagon: 1 visit(s).
+        2020-04-17 15:23:03.0
+Isosceles Trapezoid: 1 visit(s).
+        2020-04-17 15:23:03.0
+Isosceles Triangle: 1 visit(s).
+        2020-04-17 15:23:03.0
+Right Rectangle: 2 visit(s).
+        2020-04-17 15:23:03.0
+        2020-04-17 15:23:03.0
+Square: 1 visit(s).
+        2020-04-17 15:23:03.0
