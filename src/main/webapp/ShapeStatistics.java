@@ -15,7 +15,7 @@ public class ShapeStatistics {
 			"Isosceles Trapezoid", "Isosceles Triangle", "Equilateral Triangle", "Square", "Pentagon", "Hexagon" };
 
 	public static void hello() {
-		out.println("File Created!!!!!!");
+		out.println("File Created!");
 	}
 	public static void main(String[] args) {
 		Connection conn;

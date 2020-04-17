@@ -1,4 +1,5 @@
 <%@ page import="java.sql.*,java.util.Random,java.io.*"%>
+<%@ page import="Demo.MyClass" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -12,8 +13,7 @@
 out.println("You can reset Statistics here!!!!");
 	
 %>
-<%@ page import="ShapeStatistics" %>
-<%ShapeStatistics.hello();%>
+
 	<%
 out.println("Imported");
 	
