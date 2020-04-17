@@ -5,6 +5,10 @@ import java.util.Random;
 import java.io.*;
 
 public class ShapeStatistics {
+	
+	public static String testMethod() {
+		return "Hello";
+	}
 
 	// number of table rows to generate
 	private static final int ITERN = 10;
