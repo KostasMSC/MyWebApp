@@ -9,10 +9,11 @@
 </head>
 <body>
 	<%
-out.println("You can reset Statistics here!");
+out.println("You can reset Statistics here!!!!");
 	
 %>
 <%@ page import="ShapeStatistics.java" %>
+<%Main.main(null);%>
 	<%
 out.println("Imported");
 	
