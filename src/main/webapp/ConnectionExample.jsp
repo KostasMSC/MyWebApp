@@ -16,10 +16,19 @@ Statement statement = connection.createStatement();
 String query = "CREATE DATABASE test";
 statement.executeUpdate(query);
 out.println("Database test created sucessfully.");
+
+} catch (SQLException e) {
+	out.println("SQLException caught: " +e.getMessage());
+} catch (InstantiationException e) {
+	out.println("InstantiationException caught: " +e.getMessage());
+} catch (IllegalAccessException e) {
+	out.println("IllegalAccessException caught: " +e.getMessage());
+} catch (ClassNotFoundException e) {
+	out.println("ClassNotFoundException caught: " +e.getMessage());
 }
 catch (Exception e)
 {
-out.println("An error occurred.");
+	out.println("Exception caught: " +e.getMessage());
 }
 %>
 </body>
