@@ -26,7 +26,7 @@ public class ShapeStatistics {
 		try {
 			// obtain a connection to the DB, use DB driver, URL, credentials
 			String connURL = "jdbc:mysql://localhost:3306/page_visits";
-			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			conn = DriverManager.getConnection(connURL, "root", "123456");
 
 			/*
@@ -90,7 +90,7 @@ public class ShapeStatistics {
 				}
 				
 		        System.setOut(console); 
-		        System.out.println("File Created!");
+		        System.out.println("File Created Web App!");
 				
 			} catch (FileNotFoundException e) {
 				
