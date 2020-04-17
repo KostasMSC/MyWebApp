@@ -9,39 +9,9 @@ public class Connect {
 	public static String testMethod() {
 		return "Hello";
 	}
-	
+
 	public static void truncateTable() {
-		Connection conn;
-
-		try {
-			// obtain a connection to the DB, use DB driver, URL, credentials
-			String connURL = "jdbc:mysql://localhost:3306/page_visits";
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
-			conn = DriverManager.getConnection(connURL, "root", "123456");
-
-			/*
-			 * reset the DB
-			 */
-			Statement stmt0 = conn.createStatement();
-			stmt0.executeUpdate("TRUNCATE PAGE_VISITS");
-			
-			stmt0.close();
-			conn.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (InstantiationException e) {
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-
-	}
-
-	public static void insertTable() {
 		final int ITERN = 10;
-		
 		// shape names
 		final String[] shapes = { "Circle", "Ellipse", "Right Triangle", "Right Rectangle",
 				"Isosceles Trapezoid", "Isosceles Triangle", "Equilateral Triangle", "Square", "Pentagon", "Hexagon" };
@@ -55,21 +25,22 @@ public class Connect {
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			conn = DriverManager.getConnection(connURL, "root", "123456");
 
+			/*
+			 * reset the DB
+			 */
+			Statement stmt0 = conn.createStatement();
+			stmt0.executeUpdate("TRUNCATE PAGE_VISITS");
 
 			/*
 			 * insert random data into to DB
 			 */
 			Random ridx = new Random();
 			Random sleept = new Random();
-			
-			Statement stmt0 = conn.createStatement();
 
 			for (int i = 0; i < ITERN; i++) {
 
 				// select a random index value for the shapes table
 				int idx = ridx.nextInt(shapes.length);
-				
-				
 
 				// add the corresponding shape into the DB along with timestamp
 				stmt0.executeUpdate("INSERT INTO PAGE_VISITS (SHAPE, TS) VALUES ('" + shapes[idx] + "', NOW())");
