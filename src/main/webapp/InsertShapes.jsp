@@ -1,7 +1,8 @@
 <%@ page import="java.sql.*,java.util.Random,java.io.*"%>
 			<%
 				// shape names
-				String shape = this.getClass().getSimpleName().replaceFirst("_jsp", "");
+// 				String shape = this.getClass().getSimpleName().replaceFirst("_jsp", "");
+				String shape = request.getParameter("shapeName");
 
 				Connection conn;
 
