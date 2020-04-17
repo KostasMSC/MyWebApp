@@ -45,6 +45,8 @@ application.setAttribute("count",i);
         <li><a href="Square.jsp">Square<a></li>
         <li><a href="Pentagon.jsp">Pentagon</a></li>
         <li><a href="Hexagon.jsp">Hexagon</a></li>
+        <li><a href="ViewStatistincs.jsp">View Statistics</a></li>
+        <li><a href="ResetStatistincs.jsp">Reset Statistics</a></li>
     </ol>
     <br>
     <%
