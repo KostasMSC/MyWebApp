@@ -15,7 +15,9 @@
     Class.forName("com.mysql.jdbc.Driver").newInstance();
     con = DriverManager.getConnection("jdbc:mysql://localhost:3306/"+db, user, "123456");
     out.println (db+ "database successfully opened.");
-  }
+	} catch (ClassNotFoundException e) {
+		out.println("ClassNotFoundException caught: " +e.getMessage());
+	}
   catch(SQLException e) {
     out.println("SQLException caught: " +e.getMessage());
   }
