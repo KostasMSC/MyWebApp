@@ -17,7 +17,7 @@ try {
 	// obtain a connection to the DB, use DB driver, URL, credentials
 	String connURL = "jdbc:mysql://localhost:3306/page_visits";
 	Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-	conn = DriverManager.getConnection(connURL, "root", "123456");
+	conn = DriverManager.getConnection(connURL, "coursework", "u[4[W67Pm}P;\6~G");
 	
 	Statement stmt0 = conn.createStatement();
 
