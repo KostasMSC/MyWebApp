@@ -12,5 +12,8 @@
 
 	<p>Hello!
 	<p>This is a red Trapezoid
+	<jsp:include page='InsertShapes.jsp'>
+	    <jsp:param name="shapeName" value="<%=this.getClass().getSimpleName().replaceFirst(\"_jsp\", \"\")%>" />
+	</jsp:include>
 </body>
 </html>

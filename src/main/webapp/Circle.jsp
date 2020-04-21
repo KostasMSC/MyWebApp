@@ -20,38 +20,9 @@
     	<circle cx="75" cy="75" r="75"
 					style="fill:red;stroke:black;stroke-width:1" />
 	</svg>
-			<%
-				// shape names
-				String shape = this.getClass().getSimpleName().replaceFirst("_jsp", "");
-
-				Connection conn;
-
-				try {
-					// obtain a connection to the DB, use DB driver, URL, credentials
-					String connURL = "jdbc:mysql://localhost:3306/page_visits";
-					Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-					conn = DriverManager.getConnection(connURL, "root", "123456");
-
-					Statement stmt0 = conn.createStatement();
-
-					// add the corresponding shape into the DB along with timestamp
-					stmt0.executeUpdate("INSERT INTO PAGE_VISITS (SHAPE, TS) VALUES ('" + shape + "', NOW())");
-
-					/*
-					 * release resources
-					 */
-					stmt0.close();
-					conn.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
-				} catch (InstantiationException e) {
-					e.printStackTrace();
-				} catch (IllegalAccessException e) {
-					e.printStackTrace();
-				} catch (ClassNotFoundException e) {
-					e.printStackTrace();
-				}
-			%>
+	<jsp:include page='InsertShapes.jsp'>
+	    <jsp:param name="shapeName" value="<%=this.getClass().getSimpleName().replaceFirst(\"_jsp\", \"\")%>" />
+	</jsp:include>
 		
 	</font>
 </body>
