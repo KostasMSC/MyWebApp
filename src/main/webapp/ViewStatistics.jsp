@@ -10,17 +10,7 @@
 <body>
 	<%
 out.println("You can view Insert Statistics here!");
-	
-	// number of table rows to generate
-	final int ITERN = 10;
-	
-	// max time to sleep between table row insertions
-	final int MAXSLEEP = 1000;
 
-	// shape names
-	final String[] shapes = { "Circle", "Ellipse", "Right Triangle", "Right Rectangle",
-			"Isosceles Trapezoid", "Isosceles Triangle", "Equilateral Triangle", "Square", "Pentagon", "Hexagon" };
-	
 Connection conn;
 
 try {
